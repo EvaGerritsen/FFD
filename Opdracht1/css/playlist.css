@@ -1,0 +1,70 @@
+* {
+    background-color: black;
+    box-sizing: border-box;
+}
+
+main {
+    color: white;
+    font-family: "helvetica neue", "Helvetica", "Arial";
+}
+
+h1 {
+    font-family: "helvetica neue", "Helvetica", "Arial";
+    font-size: 36px;
+    font-weight: 200;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 200;
+}
+
+ul {
+    list-style: none;
+}
+
+ul img {
+    width: 20em;
+    /*    margin: 0em;*/
+}
+
+img.cover1 {}
+
+img.cover2 {}
+
+img.cover3 {}
+
+img.cover4 {}
+
+#rating {
+    border-style: none;
+    margin-bottom: 2.2em;
+    margin-left: 4.8em;
+}
+
+#rating span {
+    cursor: pointer;
+    font-size: 20px;
+    padding: 0 5px;
+    color: whitesmoke;
+    opacity: .5;
+    /*  transition: all 150ms;*/
+    /*  display: inline-block;*/
+    /*  transform: rotateX(45deg);*/
+    /*  transform-origin: center bottom;*/
+}
+
+#rating span:hover {
+    color: white;
+    opacity: 1;
+/*    transform: rotateX(0deg);*/
+/*    text-shadow: 0 0 30px #ffc;*/
+}
+
+
+footer {
+    color: white;
+    font-family: "helvetica neue", "Helvetica", "Arial";
+    font-size: 11px;
+    font-weight: 200;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Inloggen</title>
+</head>
+
+<body>
+    <!--de header met een navigatie bar voor de site   -->
+
+    <header>
+        <nav>
+            <!--           de lijst met elementen voor in de nagivatie zoals een afbeelding-->
+            <ul>
+                <li><a href="#"> <img src="images/alldownloads.png" alt="download"></a></li>
+                <li><a href="index.html"> <img src="images/wowlogo.jpeg" alt="logo"> </a></li>
+                <li><a href="profiel.html"><img src="images/profiel.png" alt="logo"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--   de main van deze pagina is het inloggen-->
+    <main id="login">
+
+        <!--       een formulier voor het inloggen doormiddel van een email adress en wachtwoord-->
+        <form class="emailform" action="hetverhaal.html">
+
+            <legend>inloggen</legend>
+
+            <!--label geeft een "titel" aan het formulier en de input is was er gevraagd wordt, met een kleine feedback als hint-->
+            <label for="email"> e-mailadres </label>
+            <input type="email" id="email" name="email" required autofocus placeholder="name@hotmail.com">
+
+            <label for="password">wachtwoord</label>
+            <input type="password" id="password" name="password" required autofocus>
+
+            <!-- en een inlog button die je na het juist invullen in de site laat-->
+            <button class="inloggen">login</button>
+        </form>
+
+    </main>
+
+    <script src="js/javascript.js"></script>
+    
+    <footer>
+        <p> &copy; 2019, Eva Gerritsen, Project Web </p>
+    </footer>
+
+</body>
+
+</html>

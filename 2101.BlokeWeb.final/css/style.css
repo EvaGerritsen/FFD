@@ -1,0 +1,444 @@
+* {
+    box-sizing: border-box;
+}
+
+/*zet de tekst centraal in de code en een randje om het blok*/
+article {
+    border: 0.05em solid #e5e9ec;
+    padding: .5rem;
+    text-align: center;
+}
+
+/*zorgt dat de img zich vuld in het blok waar het in staat*/
+article img {
+    max-width: 100%;
+}
+
+/*stijlt de p's in een article*/
+article p {
+    color: black;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+/*zorgt voor een halve centimeter aan elke kant van de body*/
+body {
+    margin: 0.5em;
+}
+
+/*de padding geet wat ruimte in de button */
+button {
+    border-style: none;
+    padding: 0.5em;
+}
+
+/*de padding geet wat ruimte in de button */
+fieldset {
+    border-style: none;
+    padding: 1em 1em;
+}
+
+/*pakt de eerst fieldset sorteer blokje en stijlt deze */
+fieldset:first-of-type {
+    background-color: #82207c;
+    border-style: none;
+    color: white;
+    margin-bottom: 1em;
+    max-width: 10em;
+}
+
+/*pakt de andere fieldssets nu ook en zet er een paars streepje onder in het sorteer en filterveld */
+fieldset:nth-of-type(n) {
+    border-bottom: 0.1em solid #5b1d55;
+    margin-bottom: 0.6em;
+}
+
+/*zorgt dat de tekst in de footer 10px is en in het midden gecentreerd staat*/
+footer {
+    font-size: 10px;
+    text-align: center;
+}
+
+/*geeft de hele website de volgende lettertypes*/
+html {
+    font-family: "museo-sans", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+    margin: 0;
+}
+
+/*zorgt voor de positie van de header*/
+header {
+    background-color: white;
+    padding: 0.2rem 1rem;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+}
+
+/*stijlt de images zodat ze goed in de header passen*/
+header img {
+    height: 3em;
+    width: 3em;
+}
+
+/*zorgt voor de juiste positie van de images in de header en de space er tussen*/
+header ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*hover voor de nav afbeeldingen*/
+header ul li a:hover {
+    border-bottom-style: solid;
+}
+
+/*stijlt de tekst in de h1 en geeft de grid positie aan*/
+h1 {
+    font-size: 18px;
+    color: black;
+    font-weight: 500;
+    grid-column: 1/-1;
+    text-transform: uppercase;
+}
+
+/*stijlt de tekst in de h2 en zorgt voor een duidelijke achtergrond kleur en de ruimte (margin) er omheen*/
+h2 {
+    background-color: #82207c;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0 0 0.5rem;
+    padding: 0.3em;
+    text-transform: uppercase;
+}
+
+/*het stijlen van de h3*/
+h3 {
+    font-size: 18px;
+}
+
+/*zorgt dat de radio buttons bij de "leestijd" op 1 lijn staan*/
+input[type="radio"] {
+    left: -9999px !important;
+    position: absolute !important;
+    text-align: center;
+    top: -9999px !important;
+}
+
+/*de tekst staat midden in het blokje en de tekst is paars van kleur*/
+input[type="radio"] + label {
+    color: #82207c;
+    display: inline-block;
+    font-size: 15px;
+    margin: 0 0.6rem 0 0;
+    text-align: center;
+}
+
+/*hover over de label en hij wordt zichtbaar*/
+input[type="radio"]:hover + label {
+    background-color: #d8bdd7;
+    border-radius: 0.4em;
+    padding: 0.3em;
+    color: white;
+}
+
+/*wanneer de radio button is aangeklikt veranderd de achtergrond kleur naar geel en de tekst in zwart*/
+input[type="radio"]:checked + label {
+    background-color: #8e2c82;
+    border-radius: 0.4em;
+    color: white;
+    padding: 0.3em;
+}
+
+/* verbergt de checkboxen die de browser plaatst */
+label input {
+    cursor: pointer;
+    display: block;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+    width: 0;
+}
+
+/*hover over het zoekveld en hij krijgt een andere kleur*/
+input:hover {
+    background-color: #d8bdd7;
+}
+
+/*hier onder begint de class*/
+/*het reclame blok op de site*/
+.sorteer {
+    background-color: #fafafa;
+    border-style: none;
+    height: calc(50vh - 3.5rem);
+    min-height: 10rem;
+    padding: 9rem 5rem 0 5rem;
+}
+
+/* stijlt de buttons in dit formulier */
+.container {
+    cursor: pointer;
+    display: block;
+    font-size: 1em;
+    margin-bottom: 12px;
+    position: relative;
+    padding-left: 35px;
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+}
+
+/* stijl de checkboxen zelf */
+.checkmark {
+    background-color: white;
+    border-radius: 50%;
+    border-style: solid;
+    height: 15px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 15px;
+}
+
+/*geef de checkmarks een kleurtje wanneer je er overheen gaat met de muis*/
+.checkmark:hover {
+    background-color: #d8bdd7;
+}
+
+/*wanneer de checkbox is checked dan veranderd de kleur hier van in zwart */
+.container input:checked ~ .checkmark {
+    background-color: black;
+}
+
+/*de meer button die verwijst naar het verhaal gestijld*/
+.meer {
+    border-bottom: 4px solid #f7de66;
+    color: #82207c;
+    display: flex;
+    font-size: 12px;
+    font-weight: 600;
+    justify-content: flex-end;
+    margin-left: auto;
+    padding: 0.6em;
+    position: relative;
+}
+
+/*geef een kleurtje wanneer de muis over de meer button gaat*/
+.meer:hover {
+    background-color: #d8bdd7;
+}
+
+/*stijl de upload button en zorgt dat hij in 1seconde uit en in transformeerd met hulp van javascript.*/
+.upload {
+    background-repeat: no-repeat;
+    border: 5px solid #fff;
+    border-radius: 20px;
+    /*    box-shadow: inset 0 2px 0 hsla(0, 10%, 10%, .1), 0 3px 0 hsla(0, 10%, 10%, .075);*/
+    cursor: pointer;
+    display: flex;
+    font-size: 16px;
+    transition: background 1s ease-in-out;
+    width: 60px;
+}
+
+/*wanneer er geklikt wordt op de button veranderd de achtergrond van kleur*/
+.uploadoff {
+    background: #d8bdd7;
+    transition: background 1s ease-in-out;
+}
+
+/*de upload button komt naar voren wanneer er over heen gehovert wordt (door schaduw)*/
+.upload:hover {
+    box-shadow: inset 0 2px 0 hsla(0, 10%, 10%, .1), 0 3px 0 hsla(0, 10%, 10%, .075);
+}
+
+/*zet een lijntje onder de comments en de padding zorgt voor ruimte tussen de tekst en het lijntje*/
+.lijn {
+    padding-bottom: 1em;
+    border-bottom: solid 0.1em #82207c;
+}
+
+
+/*de code hier onder is van sonja's code pen */
+/*zet de classes in een grid van 1 column */
+.samenvattingverhaal {
+    color: #f3f3f3;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: 1fr;
+    margin: 0.5em;
+    text-align: center;
+}
+
+/*zet de grid columns na 600px in 2 columns naast elkaar*/
+@media (min-width: 600px) {
+    .samenvattingverhaal {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/*zet de grid columns na 900px in 4 columns naast elkaar */
+@media (min-width: 900px) {
+    .samenvattingverhaal {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+/*hier onder beginnen de id's*/
+/*de eerst zoek button gestijld*/
+#zoeken1 {
+    background-color: darkgrey;
+    border-radius: 0.5em;
+    color: white;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+/*hover met een kleurtje toegevoegt aan de zoek button*/
+#zoeken1:hover {
+    background-color: #d8bdd7;
+}
+
+/*de tweede zoek button gestijld*/
+#zoeken2 {
+    background-color: darkgrey;
+    border-radius: 0.5em;
+    color: white;
+    display: flex;
+    font-size: 12px;
+    font-weight: 600;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+/*hover met een kleurtje toegevoegt aan de zoek button*/
+#zoeken2:hover {
+    background-color: #d8bdd7;
+}
+
+/*stijlt het genre formulier*/
+#genre {
+    background: #82207c;
+    border-color: #82207c;
+    border-radius: 0.5em;
+    color: white;
+    font-size: 14px;
+}
+
+/*hover met een kleurtje toegevoegt aan het genre uitklap formulier*/
+#genre:hover {
+    background-color: #d8bdd7;
+}
+
+/*selecteert het uitschuif id waar het sorteer en filteren in staat en verbergt deze*/
+#uitschuif {
+    height: 0px;
+    overflow: hidden;
+    transition: .3s;
+    width: 250px;
+}
+
+/*zorgt er voor dat doormiddel van javascript het uitschuiven zichtbaar wordt*/
+#uitschuif.groei {
+    height: 440px;
+}
+
+/*zorgt er voor dat doormiddel van javascript het uitschuiven zichtbaar wordt*/
+#start {
+    border-bottom: 4px solid #82207c;
+    color: #82207c;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0.5em;
+}
+
+/*hover over de sorteer en filter titel en het wordt zichtbaar dat dit klikbaar is */
+#start:hover {
+    background-color: #d8bdd7;
+}
+
+
+/*//// Het verhaal //// */
+
+/*zorgt voor ruimte tussen het verhaal en de header*/
+#verhaal {
+    padding-top: 4em;
+}
+
+/*inputveld voor reacties bij het verhaal*/
+#reactie {
+    background: none;
+    margin: 0;
+    margin-left: 5em;
+    padding: 2rem;
+}
+
+/*wanneer het imvoerveld bij de comments leeg is zorgt de code voor een grijs randje en ruimte in het invoerveld*/
+input:empty {
+    border: 0.2em solid #e5e9ec;
+    border-radius: 0.5em;
+    padding-bottom: 0.3em;
+}
+
+
+/*//// Het inloggen ////*/
+
+/*geeft het email invoerveld ruimte en een witte achtergrond + ronde randjes*/
+input[type="email"] {
+    border-color: #f3f3f3;
+    border-radius: 0.5em;
+    margin: 0.5em;
+    padding: 0.5em 0.5em;
+}
+
+/*geeft het password invoerveld ruimte en een witte achtergrond + ronde randjes*/
+input[type="password"] {
+    border-color: #f3f3f3;
+    border-radius: 0.5em;
+    margin: 0.5em;
+    padding: 0.5em 0.5em;
+}
+
+/*stijlt het inlog label*/
+legend {
+    color: #82207c;
+    ;
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 1em;
+    text-transform: uppercase;
+}
+
+/*geeft de labels hoofdletters*/
+.emailform {
+    text-transform: uppercase;
+
+}
+
+/*stijlt de inlog blok en zet hem op z'n plaats*/
+#login {
+    border-color: #f3f3f3;
+    border-style: solid;
+    display: grid;
+    font-size: 14px;
+    justify-content: center;
+    margin: 2em;
+    margin-top: 6em;
+    max-width: 27em;
+    padding: 2em;
+}
+
+/*stijlt de inlog button en zet hem op z'n plaats*/
+.inloggen {
+    background-color: #82207c;
+    border-radius: 0.2em;
+    color: white;
+    display: flex;
+    margin-top: 2em;
+    padding: 1em;
+    text-transform: uppercase;
+}

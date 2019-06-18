@@ -1,0 +1,82 @@
+<form action="zoekresultaten.html">
+        <input type="search">
+        <button type="submit"><img src="https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-512.png" width="15" alt="zoek"> Zoeken ></button>
+    </form>
+
+    <h1>Welk boek zoekt u?</h1>
+    <form action="aanmeldenGelukt.html">
+
+        <fieldset>
+            <legend>Personalia</legend>
+
+            <label for="roepnaam">Roepnaam *:</label><br>
+            <input type="text" id="roepnaam" required autofocus>
+            <br>
+
+            <label for="tussenvoegsel">Tussenvoegsel</label><br>
+            <input type="text" id="tussenvoegsel">
+            <br>
+
+            <label for="achternaam">Achternaam *:</label><br>
+            <input type="text" id="achternaam" required>
+            <br>
+
+            <label for="telefoon">Telefoonnummer:</label><br>
+            <input type="tel" id="telefoon" placeholder="+31 6123 4678">
+            <br>
+
+            <fieldset>
+                <legend>Tips</legend>
+                <input type="radio" name="radiobuttons" value="nieuw" id="nieuw" checked> <label for="nieuw">Nieuw</label><br>
+                <input type="radio" name="radiobuttons" value="populair" id="populair"> <label for="populair">Populair</label><br>
+                <input type="radio" name="radiobuttons" value="tips" id="tips"> <label for="tips">Tips</label><br>
+                <input type="radio" name="radiobuttons" value="1-99" id="1-99"> <label for="1-99">1-99</label><br>
+                <input type="radio" name="radiobuttons" value="A-Z" id="A-Z"> <label for="A-Z">A-Z</label><input type="text" name="radiobuttons" placeholder="vul zelf in"><br>
+            </fieldset>
+
+            <label for="genre">Genre:</label><br>
+            <select name="genre" id="genre">
+                <option value="Roman">Roman</option>
+                <option value="Horror">Horror</option>
+                <option value="Thriller">Thriller</option>
+            </select>
+
+            <form>
+                <fieldset>
+                    <legend>Login gegevens</legend><br>
+                    <label for="email"> E-mail *:</label>
+                    <input id="email" type="email" required placeholder="name@domain.com">
+                    <br>
+
+                    <label for="wachtwoord">Wachtwoord *: </label><br>
+                    <input id="wachtwoord" type="password" required pattern=".{8,}">
+                    <br>
+
+                    <label for="wachtwoordControle">Wachtwoord nogmaals: </label><br>
+                    <input id="wachtwoordControle" type="password" required>
+                    <br>
+                    <input type="checkbox" name="gegevens" value="ja" id="gegevens">
+                    <label for="nieuwsbrief">Onthoud mijn gegevens</label>
+                    <br>
+                </fieldset>
+
+                <input type="submit" value="Vestuur">
+
+            </form>
+            <button> Hoi button </button>
+            
+            
+            
+            <!-- CSS-->
+            
+            button{
+    padding: 20px 10px;
+    background:pink;
+    color: white;
+    transition: 5s easeInElastic;
+}
+
+button:hover,
+button:focus{
+    background: #717272;
+}

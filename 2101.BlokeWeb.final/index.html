@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>WoW-air verhalen website</title>
+</head>
+
+<body>
+    <header>
+        <!--de header met een navigatie bar voor de site   -->
+
+        <nav>
+            <ul>
+                <!--de lijst met elementen voor in de nagivatie zoals een afbeelding-->
+                <li><a href="#"> <img src="images/alldownloads.png" alt="download"></a></li>
+                <li><a href="index.html"> <img src="images/wowlogo.jpeg" alt="logo"> </a></li>
+                <li><a href="profiel.html"><img src="images/profiel.png" alt="logo"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- het zoeken naar een verhaal-->
+        <article class="sorteer">
+            <form action="hetverhaal.html">
+                <label> Welke verhaal zoekt u?</label>
+                <input type="text" name="books" />
+                <button id="zoeken1">Zoeken</button>
+            </form>
+        </article>
+
+        <!--het sorteer en filter formulier die door de button kan worden in en uit geschoven-->
+        <button id="start">Sorteer en Filter</button>
+
+        <form id="uitschuif" action="hetverhaal.html">
+
+            <!--Sorteren met suggesties-->
+            <fieldset>
+                <label class="container">Nieuw
+                    <input type="checkbox" name="checkbox" value="nieuw">
+                    <span class="checkmark"></span>
+                </label>
+
+                <label class="container">Populair
+                    <input type="checkbox" name="checkbox" value="populair">
+                    <span class="checkmark"></span>
+                </label>
+
+                <label class="container">Tips
+                    <input type="checkbox" name="checkbox" value="tips">
+                    <span class="checkmark"></span>
+                </label>
+
+                <label class="container">1-99
+                    <input type="checkbox" name="checkbox" value="1-99">
+                    <span class="checkmark"></span>
+                </label>
+
+                <label class="container">A-Z
+                    <input type="checkbox" name="checkbox" value="A-Z">
+                    <span class="checkmark"></span>
+                </label>
+            </fieldset>
+
+            <!-- filters in genres -->
+
+            <label for="genre">Genre</label>
+
+            <fieldset>
+                <select name="genre" id="genre">
+
+                    <option value="Roman">Roman</option>
+                    <option value="Horror">Horror</option>
+                    <option value="Thriller">Thriller</option>
+                    <option value="Science-Fiction">Science-Fiction</option>
+                    <option value="Poetisch">Poetisch</option>
+                    <option value="Drama">Drama</option>
+
+                </select>
+            </fieldset>
+
+            <!-- filters in leestijd, hoelang iemand de tijd heeft -->
+
+            <label for="leestijd">Leestijd</label>
+
+            <fieldset>
+                <input type="radio" name="lengte" id="Kort" value="Kort" checked>
+                <label class="lengte" for="Kort">Kort</label>
+
+                <input type="radio" name="lengte" id="Gemiddeld" value="Gemiddeld" checked>
+                <label class="lengte" for="Gemiddeld">Gemiddeld</label>
+
+                <input type="radio" name="lengte" id="Lang" value="Lang" checked>
+                <label class="lengte" for="Lang">Lang</label>
+            </fieldset>
+
+            <label for="zoeken2">Heeft u een keuze gemaakt?</label>
+            <button id="zoeken2">Zoeken</button>
+
+        </form>
+
+        <!-- de aanbevolen verhalen-->
+
+        <section class="samenvattingverhaal">
+
+            <h1>Uitgelichte verhalen</h1>
+
+            <article>
+                <img class="afbeeldingverhaal" src="images/verhalen/VRM.Verhaal.EvaGerritsen.png" alt="verhaal">
+
+                <h2>Gesponsord</h2>
+                <button class="upload">
+                    <img src="images/downloadfromcloud.png" alt="">
+                </button>
+                <p>Het regent pijpenstelen van het merk Dunhill en het waait flink als ik de bus van de GVB uitstapt. Ik duw een..</p>
+
+                <form action="hetverhaal.html">
+                    <button class="meer">Meer</button>
+                </form>
+            </article>
+
+            <article>
+                <img class="afbeeldingverhaal" src="images/verhalen/alzheimer2.png" alt="verhaal">
+
+                <h2>Alzheimer</h2>
+                <button class="upload">
+                    <img src="images/downloadfromcloud.png" alt="">
+                </button>
+                <p>Slierten mist zwerven rond mijn benen. Net zat ik nog in Bus 21. Het was warm, zweet parelde langs..</p>
+
+                <form action="hetverhaal.html">
+                    <button class="meer">Meer</button>
+                </form>
+            </article>
+
+            <article>
+                <img class="afbeeldingverhaal" src="images/verhalen/zombie.jpg" alt="verhaal">
+
+                <h2>Zombie</h2>
+                <button class="upload">
+                    <img src="images/downloadfromcloud.png" alt="">
+                </button>
+                <p>Ik stap uit, euh… Hoe heet het? Zo’n vervoersdinges op wielen. Van de gemeente. Wit met blauw. Kom. Lijn..</p>
+
+                <form action="hetverhaal.html">
+                    <button class="meer">Meer</button>
+                </form>
+            </article>
+
+            <article>
+                <img class="afbeeldingverhaal" src="images/verhalen/versvorm.svg" alt="verhaal">
+
+                <h2>Verliefd</h2>
+                <button class="upload">
+                    <img src="images/downloadfromcloud.png" alt="">
+                </button>
+                <p>Op zoek naar een boek Een vrouw vraagt de weg en..</p>
+
+                <form action="hetverhaal.html">
+                    <button class="meer">Meer</button>
+                </form>
+            </article>
+
+        </section>
+
+    </main>
+    <script src="js/javascript.js"></script>
+    <footer>
+        <p> &copy; 2019, Eva Gerritsen, Project Web </p>
+    </footer>
+
+</body>
+
+</html>

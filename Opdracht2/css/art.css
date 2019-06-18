@@ -1,0 +1,52 @@
+body {
+    background-color: black;
+    font-family: "avenir";
+    letter-spacing: 0.3em;
+}
+
+p {
+    color: white;
+    text-align: center;
+    margin: auto;
+    left: 0;
+    position: absolute;
+    top: 30%;
+    width: 100%;
+}
+
+#text {
+    top: 15%;
+    font-size: 25px;
+}
+
+img {
+    width: 30em;
+    height: 20em;
+    margin: 3em;
+}
+
+#Livingroom {
+    position: absolute;
+    color: white;
+    top: 70%;
+    left: 40%;
+    margin-top: 6em;
+}
+
+#Bathroom {
+    position: absolute;
+    color: white;
+    top: 80%;
+    right: 40%;
+    margin-top: 6em;
+}
+
+#Bedroom{
+    position: absolute;
+    color: white;
+    top: 90%;
+    right: 45%;
+    margin-top: 6em;
+    margin-bottom: 5em;
+}
+
