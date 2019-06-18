@@ -43,6 +43,9 @@ request.send();
 
 ////////////////////////////////////////////////////
 
+
+//load listener van het XMLHttpRequest
+//wordt uitgevoerd als de json data geladen is
 request.addEventListener("load", function(){
 
   var data = request.response;
